@@ -17,7 +17,6 @@
       <version>3.141.59</version>
     </dependency>
   </dependencies>
-
   <name>Archetype - webdriver_java</name>
   <url>http://maven.apache.org</url>
 
