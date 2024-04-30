@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import pages.HomePage;
 
 import java.util.List;
@@ -17,6 +19,7 @@ public class BaseTests {
     private WebDriver driver;
     protected HomePage homePage;
 
+    @BeforeClass
     public void setUp()
     {
         //////////////////////////////////////////////////////////////////////
@@ -32,15 +35,12 @@ public class BaseTests {
         ////////////////////////////////////////////////
         driver = new ChromeDriver();
 
-        homePage = new HomePage(driver);
-        homePage.clickFormAuthentication();
-
-
         //////////////////////////////////////////////////////////////
         // calling the driver to get the website with a string that //
         // represents the url we want to navigate to                //
         //////////////////////////////////////////////////////////////
         driver.get("https://the-internet.herokuapp.com/");
+        homePage = new HomePage(driver);
 
         ///////////////////////////////////////////////////////////////////
         // When the find element method is called on the driver instance //
@@ -72,16 +72,14 @@ public class BaseTests {
         ///////////////////////////////////////////////////////////////
 
 //        System.out.println(driver.getTitle());
+    }
 
+    @AfterClass
+    public void tearDown()
+    {
         //////////////////////////////////////////////////////
         // closing the driver, so we aren't keeping it open //
         //////////////////////////////////////////////////////
         //driver.quit();
-    }
-
-    public static void main(String args[])
-    {
-        BaseTests test = new BaseTests();
-        test.setUp();
     }
 }

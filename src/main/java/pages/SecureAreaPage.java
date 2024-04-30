@@ -17,4 +17,6 @@ public class SecureAreaPage {
     {
         return driver.findElement(statusalert).getText();
     }
+
+
 }

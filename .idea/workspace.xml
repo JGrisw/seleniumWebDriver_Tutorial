@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56f13324-9f9c-42ce-ab93-e9af4bbbcc80" name="Changes" comment="added base test to open chrome and navigate to a testing site with comments">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SecureAreaPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTestsCTL.java" afterDir="false" />
+    <list default="true" id="56f13324-9f9c-42ce-ab93-e9af4bbbcc80" name="Changes" comment="interacting with web elements with log in page. &#10;also a section of &quot;homework&quot; where i try and figure it out before the lesson">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesctl/FrontPageCtl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pagesctl/HomePageCtl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/logIn/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SecureAreaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SecureAreaPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,8 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.LoginTests.executor": "Run",
+    "TestNG.LoginTests.testSuccessfulLogin.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -58,7 +61,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BaseTests">
+  <component name="RunManager" selected="TestNG.LoginTests.testSuccessfulLogin">
     <configuration name="BaseTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="base.BaseTests" />
       <module name="webdriver_java" />
@@ -85,8 +88,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="webdriver_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="logIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="logIn" />
+      <option name="MAIN_CLASS_NAME" value="logIn.LoginTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="webdriver_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="logIn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="logIn" />
+      <option name="MAIN_CLASS_NAME" value="logIn.LoginTests" />
+      <option name="METHOD_NAME" value="testSuccessfulLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTests.testSuccessfulLogin" />
+        <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="Application.BaseTests" />
         <item itemvalue="Application.BaseTestsCTL" />
       </list>
@@ -107,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714164460689</updated>
-      <workItem from="1714164461711" duration="8906000" />
+      <workItem from="1714164461711" duration="16567000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit &#10;-set up">
       <option name="closed" value="true" />
@@ -133,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714413459968</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="interacting with web elements with log in page. &#10;also a section of &quot;homework&quot; where i try and figure it out before the lesson">
+      <option name="closed" value="true" />
+      <created>1714421443718</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714421443718</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +190,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit &#10;-set up" />
     <MESSAGE value="added base test to open chrome and navigate to a testing site with comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added base test to open chrome and navigate to a testing site with comments" />
+    <MESSAGE value="interacting with web elements with log in page. &#10;also a section of &quot;homework&quot; where i try and figure it out before the lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="interacting with web elements with log in page. &#10;also a section of &quot;homework&quot; where i try and figure it out before the lesson" />
   </component>
 </project>
