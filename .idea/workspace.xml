@@ -4,22 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56f13324-9f9c-42ce-ab93-e9af4bbbcc80" name="Changes" comment="more homework setting up fake tests for testing my understanding &#10;need to look into Xpaths more">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ctlpages/LoginPageCtl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ctlpages/OverviewPageCtl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DropdownPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/basectl/BaseTestsCtl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dropdown/DropdownTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/loginctl/LoginTestsCtl.java" afterDir="false" />
+    <list default="true" id="56f13324-9f9c-42ce-ab93-e9af4bbbcc80" name="Changes" comment="section of course on hovering over and validating the sections that appear after hovering">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/alerts/AlertTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/alerts/FileUploadTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keys/KeysTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesctl/FrontPageCtl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pagesctl/HomePageCtl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTestsCTL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/logIn/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logIn/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +47,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AlertTests.executor": "Run",
+    "TestNG.AlertTests.testAcceptAlert.executor": "Run",
+    "TestNG.AlertTests.testGetTextFromAlert.executor": "Run",
+    "TestNG.AlertTests.testSetInputInAlert.executor": "Run",
     "TestNG.DropdownTests.testSelectedOption.executor": "Run",
+    "TestNG.FileUploadTests.testFileUpload.executor": "Run",
+    "TestNG.HoverTests.testHoverUser1.executor": "Run",
+    "TestNG.KeysTests.testBackSpace.executor": "Run",
     "TestNG.LoginTests.executor": "Run",
     "TestNG.LoginTests.testSuccessfulLogin.executor": "Run",
     "TestNG.LoginTestsCtl.executor": "Run",
@@ -74,35 +75,17 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTestsCtl">
-    <configuration name="DropdownTests.testSelectedOption" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.FileUploadTests.testFileUpload">
+    <configuration name="AlertTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dropdown.*" />
+          <option name="PATTERN" value="alerts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dropdown" />
-      <option name="MAIN_CLASS_NAME" value="dropdown.DropdownTests" />
-      <option name="METHOD_NAME" value="testSelectedOption" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="webdriver_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="logIn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="logIn" />
-      <option name="MAIN_CLASS_NAME" value="logIn.LoginTests" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -110,34 +93,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTestsCtl" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AlertTests.testAcceptAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="loginctl.*" />
+          <option name="PATTERN" value="alerts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="loginctl" />
-      <option name="MAIN_CLASS_NAME" value="loginctl.LoginTestsCtl" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTestsCtl.testSuccessfulLogin (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="webdriver_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loginctl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loginctl" />
-      <option name="MAIN_CLASS_NAME" value="loginctl.LoginTestsCtl" />
-      <option name="METHOD_NAME" value="testSuccessfulLogin" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertTests" />
+      <option name="METHOD_NAME" value="testAcceptAlert" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -145,17 +111,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.testSuccessfulLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AlertTests.testGetTextFromAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="webdriver_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="logIn.*" />
+          <option name="PATTERN" value="alerts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="logIn" />
-      <option name="MAIN_CLASS_NAME" value="logIn.LoginTests" />
-      <option name="METHOD_NAME" value="testSuccessfulLogin" />
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertTests" />
+      <option name="METHOD_NAME" value="testGetTextFromAlert" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertTests.testSetInputInAlert" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="webdriver_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alerts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.AlertTests" />
+      <option name="METHOD_NAME" value="testSetInputInAlert" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileUploadTests.testFileUpload" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="webdriver_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alerts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alerts" />
+      <option name="MAIN_CLASS_NAME" value="alerts.FileUploadTests" />
+      <option name="METHOD_NAME" value="testFileUpload" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -165,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTestsCtl" />
-        <item itemvalue="TestNG.LoginTestsCtl.testSuccessfulLogin (1)" />
-        <item itemvalue="TestNG.DropdownTests.testSelectedOption" />
-        <item itemvalue="TestNG.LoginTests.testSuccessfulLogin" />
-        <item itemvalue="TestNG.LoginTests" />
+        <item itemvalue="TestNG.FileUploadTests.testFileUpload" />
+        <item itemvalue="TestNG.AlertTests" />
+        <item itemvalue="TestNG.AlertTests.testSetInputInAlert" />
+        <item itemvalue="TestNG.AlertTests.testGetTextFromAlert" />
+        <item itemvalue="TestNG.AlertTests.testAcceptAlert" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +198,11 @@
       <workItem from="1714574792724" duration="978000" />
       <workItem from="1714596922840" duration="1268000" />
       <workItem from="1714663912668" duration="8288000" />
+      <workItem from="1714684618179" duration="194000" />
+      <workItem from="1714686565407" duration="1281000" />
+      <workItem from="1714746325317" duration="1186000" />
+      <workItem from="1714755548709" duration="3135000" />
+      <workItem from="1714770316412" duration="13125000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit &#10;-set up">
       <option name="closed" value="true" />
@@ -237,7 +244,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714488978886</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactored the CTL portion &#10;added section on drop down menus&#10;is my first CTL test successful? &#10;yes. yes it is.">
+      <option name="closed" value="true" />
+      <created>1714684667297</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714684667297</updated>
+    </task>
+    <task id="LOCAL-00007" summary="section of course on hovering over and validating the sections that appear after hovering">
+      <option name="closed" value="true" />
+      <created>1714758620312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714758620312</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +271,8 @@
     <MESSAGE value="added base test to open chrome and navigate to a testing site with comments" />
     <MESSAGE value="interacting with web elements with log in page. &#10;also a section of &quot;homework&quot; where i try and figure it out before the lesson" />
     <MESSAGE value="more homework setting up fake tests for testing my understanding &#10;need to look into Xpaths more" />
-    <option name="LAST_COMMIT_MESSAGE" value="more homework setting up fake tests for testing my understanding &#10;need to look into Xpaths more" />
+    <MESSAGE value="refactored the CTL portion &#10;added section on drop down menus&#10;is my first CTL test successful? &#10;yes. yes it is." />
+    <MESSAGE value="section of course on hovering over and validating the sections that appear after hovering" />
+    <option name="LAST_COMMIT_MESSAGE" value="section of course on hovering over and validating the sections that appear after hovering" />
   </component>
 </project>

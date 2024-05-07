@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import pages.HomePage;
 
 public class BaseTests {
@@ -35,9 +36,15 @@ public class BaseTests {
         // calling the driver to get the website with a string that //
         // represents the url we want to navigate to                //
         //////////////////////////////////////////////////////////////
-        driver.get("https://the-internet.herokuapp.com/");
+        goHome();
         homePage = new HomePage(driver);
 
+    }
+
+    @BeforeMethod
+    public void goHome()
+    {
+        driver.get("https://the-internet.herokuapp.com/");
     }
 
     @AfterClass
